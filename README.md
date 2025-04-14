@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Este projeto consiste no desenvolvimento de uma aplicação simples de controle de uma conta bancária virtual. O objetivo é simular as principais operações financeiras realizadas em uma conta bancária, permitindo que o usuário realize transferências, envie e receba PIX, além de registrar entradas e saídas de saldo.
+Este projeto consiste no desenvolvimento de uma aplicação simples de controle de uma conta bancária virtual. O objetivo é simular as principais operações financeiras realizadas em uma conta bancária, permitindo que o usuário realize transferências, além de registrar entradas e saídas de saldo.
 
 Esse projeto tem como principal foco o aprendizado e prática de conceitos de programação orientada a objetos, organização de código, manipulação de dados e lógica de negócios bancários.
 
