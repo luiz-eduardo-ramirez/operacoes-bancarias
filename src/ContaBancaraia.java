@@ -3,14 +3,35 @@ import java.util.Scanner;
 public class ContaBancaraia {
     public static void main(String[] args) {
 
-        // ContaBancaria
+        System.out.println("*** Conta Bancária ***");
         int opcao = 0;
-        String nome = "Luiz Eduardo Ramirez";
+        String nome = "";
+        Scanner nomeScanner = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        try {
+            if (nomeScanner.hasNextInt()) {
+                throw new Exception();
+            } else {
+                nome = nomeScanner.nextLine();
+            }
+        } catch (Exception e) {
+            System.out.println("Nome inválido! Utilize apenas letras.");
+            System.exit(0);
+        }
+
         String tipoConta = "Conta Corrente";
-        double saldo = 2000.00;
+        Scanner agenciaScanner = new Scanner(System.in);
+        System.out.println("Digite sua agência: ");
+        String agencia = agenciaScanner.nextLine();
+        Scanner numeroScanner = new Scanner(System.in);
+        System.out.println("Digite o número da conta: ");
+        String numeroConta = numeroScanner.nextLine();
+        System.out.println("Digite seu saldo: ");
+        double saldo = Double.parseDouble(numeroScanner.nextLine());
 
         System.out.println("**********************");
-        System.out.println("\nNome: " + nome);
+        System.out.println("\nOla! " + nome + ", obrigado por criar uma conta no nosso banco, sua agência é: " + agencia
+                + " e o número da sua conta é: " + numeroConta);
         System.out.println("Tipo de Conta: " + tipoConta);
         System.out.println("Saldo: " + saldo);
         System.out.println("\n**********************");
@@ -28,6 +49,13 @@ public class ContaBancaraia {
         while (opcao != 5) {
             System.out.println(menu);
             opcao = leitura.nextInt();
+            try {
+                if (opcao < 1 || opcao > 5) {
+                    throw new Exception("Opção inválida!");
+                }
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
 
             switch (opcao) {
                 case 1:
