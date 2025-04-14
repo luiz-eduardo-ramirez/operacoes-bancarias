@@ -1,42 +1,52 @@
-# Banco Virtual - Controle de Conta Bancária
+# Conta Bancária
 
-## Descrição do Projeto
+Este é um projeto simples em **Java** que simula o funcionamento básico de uma conta bancária, permitindo ao usuário realizar operações como consultar saldo, transferir, sacar, depositar e encerrar o programa. É um ótimo exercício para iniciantes que estão aprendendo a lidar com entrada de dados, estruturas condicionais e laços de repetição.
 
-Este projeto consiste no desenvolvimento de uma aplicação simples de controle de uma conta bancária virtual. O objetivo é simular as principais operações financeiras realizadas em uma conta bancária, permitindo que o usuário realize transferências, além de registrar entradas e saídas de saldo.
 
-Esse projeto tem como principal foco o aprendizado e prática de conceitos de programação orientada a objetos, organização de código, manipulação de dados e lógica de negócios bancários.
+## 🚀 Tecnologias Utilizadas
+
+- **Java** - Linguagem de programação principal  
+- **Scanner (java.util)** - Leitura de dados pelo terminal  
+- **Orientação a Objetos** - Utilização de classe e métodos  
+
+## 🎯 Funcionalidades
+
+✅ Cadastro de conta com nome, agência, número da conta e saldo inicial  
+✅ Validação de nome (impede inserção de números)  
+✅ Consulta de saldo  
+✅ Transferência entre contas (com verificação de saldo)  
+✅ Saque com validação de saldo disponível  
+✅ Depósito de valor na conta  
+✅ Menu interativo com opção de sair  
+
+## 📌 Como Usar
+
+1. **Clone** o repositório ou copie o código.
+2. **Abra** o projeto em uma IDE Java (como IntelliJ, Eclipse ou VS Code com extensão).
+3. **Execute** o arquivo `ContaBancaria.java`.
+4. **Interaja** com o menu no terminal conforme as instruções.
+
+## 📂 Estrutura do Projeto
+📂 ArquiteturaDeSoftware
+├── 📄 README.md   # Documentação do repositório
+└── 📂 src       # Código-fonte das aplicações
+
+
+## 🔧 Melhorias Futuras
+
+- Separar a lógica em classes (ex: Conta, Cliente, Banco) para seguir melhor os princípios da POO  
+- Implementar autenticação por senha  
+- Criar suporte para múltiplas contas  
+- Adicionar interface gráfica com JavaFX ou Swing  
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para **forkar** este projeto e abrir um **pull request** com melhorias, sugestões ou correções!
+
+## 📜 Licença
+
+Este projeto é livre para uso e aprendizado. Ideal para quem está começando em Java.
 
 ---
 
-## Funcionalidades Implementadas
-
-- `recebeTransferencia(valor)`  
-  → Recebe um valor transferido de outra conta e adiciona ao saldo.
-
-- `fazTransferencia(valor)`  
-  → Realiza a transferência de um valor da conta para outra, descontando do saldo.
-
-- `enviaPix(valor)`  
-  → Envia um valor via PIX para outra conta, descontando do saldo.
-
-- `recebePix(valor)`  
-  → Recebe um valor via PIX de outra conta e adiciona ao saldo.
-
----
-
-## Tecnologias Utilizadas
-
-- Linguagem: Java
-- Paradigma: Programação Orientada a Objetos
-- IDE recomendada: IntelliJ IDEA / Eclipse / VSCode
-- Controle de versão: Git + GitHub
-
----
-
-## Como executar o projeto
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-```
+Feito por Luiz Eduardo Ramirez
